@@ -1,0 +1,19 @@
+server:
+ servlet:
+  context-path: /sistemajhayli
+spring:
+ datasource:  
+  url: jdbc:mysql://localhost/bdsistemajhayli?useSSL=false&serverTimezone = GMT
+  username: root
+  password: 
+  hikari:
+   connectionTimeout: 30000
+   idleTimeout: 60000
+   maxLifetime: 60000
+   maximumPoolSize: 15
+ thymeleaf:
+  cache: false
+app:
+ jwt:
+  secret: supersecret
+# spring.jackson.serialization.write_dates_as_timestamps: true
